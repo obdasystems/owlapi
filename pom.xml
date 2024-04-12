@@ -70,6 +70,13 @@
 		</license>
 	</licenses>
 
+    <distributionManagement>
+        <repository>
+            <id>github-obda-owlapi</id>
+            <name>OBDASystems downstream OWL API repository</name>
+            <url>https://maven.pkg.github.com/obdasystems/owlapi</url>
+        </repository>
+    </distributionManagement>
 
 	<dependencies>
 		<dependency>
@@ -432,6 +439,7 @@
 					</dependency>
 				</dependencies>
 			</plugin>
+            <!--
 			<plugin>
 				<groupId>org.sonatype.plugins</groupId>
 				<artifactId>nexus-staging-maven-plugin</artifactId>
@@ -443,6 +451,7 @@
 					<autoReleaseAfterClose>true</autoReleaseAfterClose>
 				</configuration>
 			</plugin>
+            -->
 			<plugin>
 				<groupId>org.apache.felix</groupId>
 				<artifactId>maven-bundle-plugin</artifactId>
